@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<title>Rocket Race to Outer Space</title>
+		<link rel="stylesheet" href="style.css" />
+        <img src='https://picsum.photos/500/300?image=721'/>
+        
+        <script>
+            jQuery(document).readyfunction(){
+                let totalAdd = 0;
+                jQuery(".rocket").animate(("top", "0%"), 5000);
+                jQuery(".rocket").hover(function() {
+
+                    jQuery(this).css( background-image, "url(houston.png)");
+                    jQuery(this).stop().animate(("top", "100%"), 300), function() {
+                    
+                        totalAdd = totalAdd - (-1);
+                        jQuery(" .total" ).html("Total: " + totalAdd);
+                        jQuery(this).css( backgound-image, "url(rocket.png)");
+                        jQuery(this).animate(("top", "0%"), 5000);
+                    }
+                })
+            }
+        </script>
+    </head>
+    <body>
+    <div class="header">
+		<h1>Rocket Race To Outer Space</h1>
+	    <p>Click on Rockets to prevent them from getting into space.</p>
+		<p>Each rocket prevented from reaching outer space receives a score added to the total.</p>
+    </div>
+
+    <div class="container">
+    <div class="total">Total: 0</div>
+    <div class="rocket" id="rocket1"></div>
+    <div class="rocket" id="rocket2"></div>
+    <div class="rocket" id="rocket3"></div>
+
+    <script>
+	
+    </script>
+
+    </body>
+</html>
