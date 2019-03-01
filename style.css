@@ -1,10 +1,10 @@
-body{
+body {
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.rocket{
+.rocket {
     background-color: rgb(159, 159, 159);
     border-radius: 50px, 50px, 0px, 0px;
     height: 100%;
@@ -18,11 +18,11 @@ body{
 }
 
 
-.rocket1{ 
+.rocket1 { 
     left: 10%;
 } 
 
-.rocket2{
+.rocket2 {
     left: 45%;
 }
 
@@ -30,13 +30,13 @@ body{
     left: 70%;
 }
 
-.header{
+.header {
 	background: f4f4f4;
 	border-bottom: #ccc 3px solid;
 	padding: 20px;
 }
 
-.container{
+.container {
 	width: 700px;
 	margin: 30px auto;
 }
